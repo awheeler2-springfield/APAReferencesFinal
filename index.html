@@ -659,10 +659,16 @@
         prompt: 'Which reference best matches this journal article source type?',
         artifactSnippet: 'Article with named authors, journal title, volume/issue, and page range.',
         correct: 'Smith, J. A., & Lee, P. R. (2021). How interface friction shapes student citation accuracy. Digital Communication Review, 14(2), 123–135.',
+        correctHtml: 'Smith, J. A., &amp; Lee, P. R. (2021). How interface friction shapes student citation accuracy. <em>Digital Communication Review</em>, <em>14</em>(2), 123–135.',
         distractors: [
           'Smith, John A., and Priya R. Lee. 2021. "How Interface Friction Shapes Student Citation Accuracy." Digital Communication Review 14(2): 123-135.',
           'Smith, J. A., & Lee, P. R. (2021). Digital Communication Review. How interface friction shapes student citation accuracy, 14(2), 123–135.',
           'How interface friction shapes student citation accuracy. (2021). Smith & Lee. Digital Communication Review, 14(2), 123–135.'
+        ],
+        distractorHtmls: [
+          'Smith, John A., and Priya R. Lee. 2021. &ldquo;How Interface Friction Shapes Student Citation Accuracy.&rdquo; Digital Communication Review 14(2): 123-135.',
+          'Smith, J. A., &amp; Lee, P. R. (2021). <em>Digital Communication Review</em>. How interface friction shapes student citation accuracy, 14(2), 123–135.',
+          'How interface friction shapes student citation accuracy. (2021). Smith &amp; Lee. Digital Communication Review, 14(2), 123–135.'
         ]
       },
       {
@@ -670,10 +676,16 @@
         prompt: 'Which reference best matches this webpage with a named author?',
         artifactSnippet: 'Webpage with author, page title, website name, and URL.',
         correct: 'Patel, M. (2023, July 18). Why students misread source details online. The Learning Lab. https://www.thelearninglab.org/teaching/why-students-misread-source-details',
+        correctHtml: 'Patel, M. (2023, July 18). Why students misread source details online. <em>The Learning Lab</em>. https://www.thelearninglab.org/teaching/why-students-misread-source-details',
         distractors: [
           'The Learning Lab. (2023, July 18). Why students misread source details online. Maya Patel. https://www.thelearninglab.org/teaching/why-students-misread-source-details',
           'Patel, Maya. July 18, 2023. "Why Students Misread Source Details Online." https://www.thelearninglab.org/teaching/why-students-misread-source-details',
           'Patel, M. (2023). The Learning Lab: Why students misread source details online. https://www.thelearninglab.org/teaching/why-students-misread-source-details'
+        ],
+        distractorHtmls: [
+          '<em>The Learning Lab</em>. (2023, July 18). Why students misread source details online. Maya Patel. https://www.thelearninglab.org/teaching/why-students-misread-source-details',
+          'Patel, Maya. July 18, 2023. &ldquo;Why Students Misread Source Details Online.&rdquo; https://www.thelearninglab.org/teaching/why-students-misread-source-details',
+          'Patel, M. (2023). <em>The Learning Lab</em>: Why students misread source details online. https://www.thelearninglab.org/teaching/why-students-misread-source-details'
         ]
       },
       {
@@ -681,9 +693,15 @@
         prompt: 'Which reference best matches this whole book?',
         artifactSnippet: 'Single-author book with year and publisher.',
         correct: 'Martinez, E. (2020). Writing research in everyday contexts. Riverbend Academic Press.',
+        correctHtml: 'Martinez, E. (2020). <em>Writing research in everyday contexts</em>. Riverbend Academic Press.',
         distractors: [
           'Martinez, E. Writing research in everyday contexts. (2020). Riverbend Academic Press.',
           'Riverbend Academic Press. (2020). Writing research in everyday contexts. Elena Martinez.',
+          'Martinez, Elena. (2020). Writing Research in Everyday Contexts. Boston: Riverbend Academic Press.'
+        ],
+        distractorHtmls: [
+          'Martinez, E. <em>Writing research in everyday contexts</em>. (2020). Riverbend Academic Press.',
+          'Riverbend Academic Press. (2020). <em>Writing research in everyday contexts</em>. Elena Martinez.',
           'Martinez, Elena. (2020). Writing Research in Everyday Contexts. Boston: Riverbend Academic Press.'
         ]
       },
@@ -692,10 +710,16 @@
         prompt: 'Which reference best matches this webpage with no named author?',
         artifactSnippet: 'Webpage with title, date, website name, and no listed author.',
         correct: 'Reference list checklist. (2024, September 2). Campus Writing Center. https://campuswritingcenter.edu/reference-list-checklist',
+        correctHtml: 'Reference list checklist. (2024, September 2). <em>Campus Writing Center</em>. https://campuswritingcenter.edu/reference-list-checklist',
         distractors: [
           'Campus Writing Center. (2024, September 2). Reference list checklist. https://campuswritingcenter.edu/reference-list-checklist',
           'Reference List Checklist. Campus Writing Center. (2024, September 2). https://campuswritingcenter.edu/reference-list-checklist',
           'Reference list checklist. (n.d.). Campus Writing Center. https://campuswritingcenter.edu/reference-list-checklist'
+        ],
+        distractorHtmls: [
+          '<em>Campus Writing Center</em>. (2024, September 2). Reference list checklist. https://campuswritingcenter.edu/reference-list-checklist',
+          'Reference List Checklist. <em>Campus Writing Center</em>. (2024, September 2). https://campuswritingcenter.edu/reference-list-checklist',
+          'Reference list checklist. (n.d.). <em>Campus Writing Center</em>. https://campuswritingcenter.edu/reference-list-checklist'
         ]
       },
       {
@@ -703,10 +727,16 @@
         prompt: 'Which reference best matches a chapter in an edited book?',
         artifactSnippet: 'Chapter author, chapter title, editors, book title, page range, and publisher.',
         correct: 'Brooks, J. (2022). Learning through worked examples. In M. Chen & F. Gomez (Eds.), Teaching writing across contexts (pp. 77–101). North Street Press.',
+        correctHtml: 'Brooks, J. (2022). Learning through worked examples. In M. Chen &amp; F. Gomez (Eds.), <em>Teaching writing across contexts</em> (pp. 77–101). North Street Press.',
         distractors: [
           'Chen, M., & Gomez, F. (Eds.). (2022). Teaching writing across contexts. North Street Press.',
           'Brooks, J. (2022). Teaching writing across contexts. In Learning through worked examples (pp. 77–101). North Street Press.',
           'Brooks, J. (2022). Learning through worked examples. Teaching writing across contexts, 77–101. North Street Press.'
+        ],
+        distractorHtmls: [
+          'Chen, M., &amp; Gomez, F. (Eds.). (2022). <em>Teaching writing across contexts</em>. North Street Press.',
+          'Brooks, J. (2022). <em>Teaching writing across contexts</em>. In Learning through worked examples (pp. 77–101). North Street Press.',
+          'Brooks, J. (2022). Learning through worked examples. <em>Teaching writing across contexts</em>, 77–101. North Street Press.'
         ]
       }
     ];
@@ -734,8 +764,12 @@
 
     const preparedExamples = exampleBank.map((item, index) => {
       const options = shuffle([
-        { text: item.correct, isCorrect: true },
-        ...item.distractors.map(text => ({ text, isCorrect: false }))
+        { text: item.correct, html: item.correctHtml, isCorrect: true },
+        ...item.distractors.map((text, i) => ({
+          text,
+          html: item.distractorHtmls ? item.distractorHtmls[i] : null,
+          isCorrect: false
+        }))
       ]);
       return { ...item, id: `example_${index + 1}`, options };
     });
@@ -1430,10 +1464,20 @@
               <li><span class="hl">Tier 3</span> — you misunderstood a core source element.</li>
             </ul>
             <p>Only <span class="hl">Tier 3</span> blocks completion.</p>
-            <div class="field" style="margin-top:14px;">
-              <label for="studentName">Your name for the completion badge</label>
-              <input id="studentName" value="${escapeHtml(appState.userName)}" placeholder="Enter your name" />
-            </div>
+          </div>
+        </div>
+
+        <div class="panel" style="border: 2px solid var(--accent); background: #e0f7fa;">
+          <h3 style="margin-top: 0;">🏅 Personalize your completion badge</h3>
+          <p style="color: var(--muted); margin-bottom: 12px;">Enter your name here — it will appear on the badge you receive when you finish the lab.</p>
+          <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <input
+              id="studentName"
+              value="${escapeHtml(appState.userName)}"
+              placeholder="Enter your name"
+              style="flex: 1; min-width: 200px; padding: 12px 14px; border: 2px solid var(--accent); border-radius: 10px; font-size: 1rem; background: white;"
+            />
+            ${appState.userName ? `<span style="color: var(--success); font-weight: 600;">✓ Name saved</span>` : ''}
           </div>
         </div>
 
@@ -1486,7 +1530,7 @@
               data-example-id="${escapeHtml(example.id)}"
               data-option-index="${index}"
               ${selected === index ? 'checked' : ''} />
-            ${escapeHtml(option.text)}${badge}
+            ${option.html || escapeHtml(option.text)}${badge}
           </label>
         `;
       }).join('');
